@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SSACITC – Information Technology Club</title>
+<link rel="icon" href="logo.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Outfit:wght@500;600&family=Noto+Sans+Bengali:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bgfx" aria-hidden="true"><i></i><i></i><i></i><canvas id="net"></canvas></div>
+<header class="top">
+  <button class="back" id="backBtn" hidden aria-label="Back" data-ic="back"></button><a class="brand" href="#home"><img src="logo.jpg" alt="SSACITC logo"><span><b>SSACITC</b><small>SSAC Information Technology Club</small></span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" data-ic="menu"></button>
+  <button class="kebab" id="kebab" aria-label="Menu" aria-haspopup="true" data-ic="dots" hidden></button><div class="kmenu" id="kmenu" hidden></div>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#focus">Focus areas</a><a href="#committee">Committee</a><a href="#ranking">Ranking</a><a href="#events">Activities</a><a href="#projects">Projects</a><a href="#gallery">Gallery</a><a href="#notices">Notices</a><a href="#join">Membership</a><a href="#contact">Contact</a>
+    <span class="acts" id="acts"></span>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="kick">Safiuddin Sarker Academy and College</p>
+    <h1>Build the future with technology.</h1>
+    <p class="lead">A student technology club. Explore ideas, develop skills, and build alongside others.</p>
+    <div class="btns"><a class="btn primary" href="#about">Explore the club <span data-ic="arrow"></span></a><a class="btn ghost" href="#register">Registration</a><a class="btn ghost" href="#login">Log in</a></div>
+  </div>
+  <div class="orb"><i class="ring r1"></i><i class="ring r2"></i><img src="hero.jpg" alt="SSAC Information Technology Club logo"></div>
+  <nav class="tiles" id="tiles" aria-label="Quick links"></nav>
+</section>
+
+<section id="about" class="page"></section>
+
+<section id="focus" class="page">
+  <header class="ph"><h2>Focus areas</h2><p class="lead">Different disciplines, one shared curiosity: learning by exploring and making.</p></header>
+  <div class="trace" id="focusList"></div>
+</section>
+
+<section id="committee" class="page">
+  <header class="ph"><h2>Executive committee</h2><p class="lead">The panelists who lead SSACITC.</p></header>
+  <div id="comList"></div>
+</section>
+
+<section id="events" class="page">
+  <header class="ph"><h2>Events &amp; activities</h2><p class="lead">The activities SSACITC runs for its members. Exact dates and details are posted in the notices feed.</p></header>
+  <div class="trace" id="evList"></div>
+</section>
+
+<section id="projects" class="page">
+  <header class="ph"><h2>Project showcase</h2><p class="lead">A space for confirmed student work. Replace each placeholder with approved project details.</p></header>
+  <div class="projs" id="prList"></div>
+</section>
+
+<section id="gallery" class="page">
+  <header class="ph"><h2>Photo gallery</h2><p class="lead">Approved moments from the club can be added here.</p></header>
+  <div class="mosaic" id="gaList"></div>
+</section>
+
+<section id="join" class="page">
+  <header class="ph"><h2>Make something new with us.</h2><p class="lead">Interested in learning and creating with other students? Register and the committee will review your request.</p></header>
+  <ol class="steps trace">
+    <li><h3>Register online</h3><p>Fill in the short registration form.</p><a class="btn primary" href="#register">Open registration form</a></li>
+    <li><h3>ID check</h3><p>If your ID is in the club member list, you are in at once. Otherwise a panelist accepts or rejects your request.</p></li>
+    <li><h3>Log in as a member</h3><p>Once approved, open the Member panel to read club notices.</p><a class="btn ghost" href="#login">Member panel</a></li>
+  </ol>
+  <div class="panel" id="rules"></div>
+  <p class="muted">Questions? Visit the <a class="lnk" href="#contact">Contact</a> page.</p>
+</section>
+
+<section id="contact" class="page">
+  <header class="ph"><h2>Contact the club</h2><p class="lead">Connect through the club’s social channels or check back for school-approved contact information.</p></header>
+  <dl class="facts"><dt>Official email</dt><dd><a class="lnk" href="mailto:ssacitc2023@gmail.com">ssacitc2023@gmail.com</a></dd>
+  <dt>Phone</dt><dd class="calls"><a href="tel:+8801740030476"><b>President</b><span>+880 1740-030476</span></a><a href="tel:+8801968815586"><b>Executive</b><span>+880 1968-815586</span></a></dd>
+  <dt>Meeting location</dt><dd>[Add meeting location]</dd></dl>
+  <div class="panel"><h3>Find SSACITC online</h3><p class="muted">Follow the club’s social channels for updates.</p>
+  <div class="btns row"><a class="btn primary" data-social="facebook" href="#"><span data-ic="fb"></span>Facebook</a><a class="btn ghost" data-social="instagram" href="#"><span data-ic="ig"></span>@ssacitc_official</a></div></div>
+</section>
+<section id="register" class="page"></section>
+<section id="login" class="page"></section>
+<section id="forgot" class="page"></section>
+<section id="notices" class="page"></section>
+<section id="m-home" class="page"></section>
+<section id="m-feed" class="page"></section>
+<section id="m-profile" class="page"></section>
+<section id="p-home" class="page"></section>
+<section id="p-post" class="page"></section>
+<section id="p-feed" class="page"></section>
+<section id="p-requests" class="page"></section>
+<section id="p-committee" class="page"></section>
+<section id="p-gallery" class="page"></section>
+<section id="p-roster" class="page"></section>
+<section id="p-members" class="page"></section>
+<section id="ranking" class="page"></section>
+<section id="m-dept" class="page"></section>
+<section id="m-record" class="page"></section>
+<section id="p-depts" class="page"></section>
+<section id="p-member" class="page"></section>
+<section id="p-record" class="page"></section>
+<section id="m-notices" class="page"></section>
+<section id="m-notice" class="page"></section>
+<section id="p-notice" class="page"></section>
+<section id="m-about" class="page"></section>
+<section id="p-about" class="page"></section>
+<section id="p-me" class="page"></section>
+</main>
+
+<footer class="foot">
+  <a class="brand" href="#home"><img src="logo.jpg" alt=""><span><b>SSACITC</b><small>Safiuddin Sarker Academy and College</small></span></a>
+  <div class="cols"><a href="#about">About</a><a href="#focus">Focus areas</a><a href="#committee">Committee</a><a href="#ranking">Ranking</a><a href="#events">Activities</a><a href="#projects">Projects</a><a href="#gallery">Gallery</a><a href="#notices">Notices</a><a href="#join">Membership</a><a href="#contact">Contact</a><a data-social="facebook" href="#">Facebook</a><a data-social="instagram" href="#">Instagram @ssacitc_official</a></div>
+  <p class="muted small">Official information should be updated by the club or school administrators.</p>
+</footer>
+
+<div id="lb" hidden></div>
+<nav class="bnav" id="bnav"></nav><div id="toast" role="status"></div>
+<script>
+(function(){var errs=[];function add(m){errs.push(String(m).slice(0,200));}
+addEventListener("error",function(e){add(e.message||"script error");});
+addEventListener("unhandledrejection",function(e){add(e.reason&&e.reason.message||e.reason);});
+setTimeout(function(){if(document.body.classList.contains("ready"))return;var d=document.createElement("div");d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99;padding:16px;background:#101a3c;color:#fff;font:14px/1.5 sans-serif;text-align:center;border-top:1px solid #25365f";d.innerHTML="The site is taking too long to load. Please refresh. If it stays like this, send this note to the admin:<br><small></small>";d.querySelector("small").textContent=errs.join(" | ")||"no error captured (script.js may be missing or blocked)";document.body.appendChild(d);},10000);})();
+</script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
