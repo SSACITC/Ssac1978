@@ -1,0 +1,4 @@
+(function(){var errs=[];function add(m){errs.push(String(m).slice(0,200));}
+addEventListener("error",function(e){add(e.message||"script error");});
+addEventListener("unhandledrejection",function(e){add(e.reason&&e.reason.message||e.reason);});
+setTimeout(function(){if(document.body.classList.contains("ready"))return;var d=document.createElement("div");d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99;padding:16px;background:#101a3c;color:#fff;font:14px/1.5 sans-serif;text-align:center;border-top:1px solid #25365f";d.innerHTML="The site is taking too long to load. Please refresh. If it stays like this, send this note to the admin:<br><small></small>";d.querySelector("small").textContent=errs.join(" | ")||"no error captured (script.js may be missing or blocked)";document.body.appendChild(d);},10000);})();
